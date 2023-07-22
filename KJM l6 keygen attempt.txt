@@ -1,0 +1,38 @@
+#KeyGen_Midterm_KJM.py
+import sys
+if len(sys.argv)==2:
+    file = sys.argv[1]
+else:
+    file = "lab6.exe"
+with open (file , "rb") as f:
+    nope = f.read(0xc3e)
+    flag=[]
+    for x in range (38):
+        byte = f.read(1)
+        flag.append(int.from_bytes(byte,"little"))
+        nope = f.read(3)
+    byte = f.read(1)
+    flag.append(int.from_bytes(byte, "little"))
+    nope=f.read (1)
+    keya = f.read(1)
+    keya= int.from_bytes(keya,"little")
+    print("The 1st key is",keya)
+    nope = f.read(30)
+    keybls = []
+    for x in range (5):
+        byte = f.read (1)
+        keybls.append (int.from_bytes(byte, "little"))
+    keyb = int("".join(map(str,keybls)))
+    print ("the 2nd Key is", keyb)
+    keycls= []
+    for x in range (5):
+        byte = f.read (1)
+        keycls.append (int.from_bytes(byte, "little"))
+    keyc = int ("".join(map(str,keycls)))
+    print("the third key is",keyc)
+    c = 0
+    while ( c < 0x27):
+        flag[c] = flag[c]
+        c = c + 1
+    print("The encrypted flag is: ")
+    print("".join([chr(c) for c in flag]))
