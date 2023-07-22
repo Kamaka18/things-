@@ -1,0 +1,8 @@
+#!/bin/bash
+function domfind ()
+{
+echo "Enter domain name";
+read Dname
+ping -c 1  $Dname | grep "(" | awk {'print $3'}
+}
+domfind 
