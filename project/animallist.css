@@ -1,0 +1,97 @@
+#grid-header {
+   display: grid;
+   grid-template-columns: 40% auto auto auto;
+   background: linear-gradient(to bottom right, lightgreen, darkgreen);
+}
+
+#link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#link > a {
+   color: white;
+   font-size: 40px;
+   text-align: center;
+   text-decoration: none;
+   font-style: italic;
+}
+
+
+#special {
+   display: flex;
+   align-items: center;
+   justify-content: left;
+}
+
+#special > a {
+   font-size: 35px;
+   font-weight: bold;
+   text-decoration: none;
+   text-align: center;
+   background: khaki;
+   padding: 5px;
+   border: 15px solid red;
+   margin: 10px;
+}
+
+#explore {
+   display: flex;
+   background-color: darkblue;
+   justify-content: center;
+}
+
+#explore > p {
+   color: white;
+   font-size: 40px;
+}
+
+#grid-list {
+   display: grid;
+   grid-template-columns: 2% 24% 24% 24% 24% 2%;
+}
+
+#heading {
+   display: flex;
+   justify-content: center;
+   border: 5px solid gray;
+   background-color: khaki;
+   position: relative;
+   height: 2000px;
+}
+
+#side {
+   display: flex;
+   background-color: darkblue;
+}
+
+table {
+   top: 100px;
+   display: flex;
+   position: absolute;
+   text-align: center;
+}
+
+td {
+   width: 200px;
+   background-color: white;
+   border: 5px solid khaki;
+   border-radius: 15px;
+}
+
+#grid-item {
+   display: grid;
+   grid-template-rows: 180px 30px 40px 60px;
+}
+
+#text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#image {
+   display: grid;
+   align-items: top;
+}

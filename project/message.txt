@@ -1,0 +1,185 @@
+<DOCTYPE html>
+    <html lang="en">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="Stylesheet_hp.css" rel="stylesheet">
+        <!--Title and header area. Made into a class so we can center and color it in CSS-->
+        <head>
+            <!--Title CSS-->
+            <style>
+                h1{
+                    text-align: center;
+                    font-size: 40px;
+                    background-color:khaki;
+                    margin:5px;
+     
+                }
+                p{
+                    text-align:center;
+                    font-size:20px;
+                    margin:5px;
+                    font-weight:bold;
+                    background-color:khaki;
+     
+                }
+            </style>
+            <title>Gondor City Zoo</title>
+            <h1>Gondor City Zoo</h1>
+       
+            <p>Middle Earth's Best Zoo (2016)<cite> -Squire Magazine</cite></p>
+        </head>
+            <form>
+                <div id="grid-container">
+                    <div id="special"><a href="homepage-index.html">GONDOR<br><br><img src="tree.png" alt="tree" width="50px"><br><br>CITY ZOO</a></div>
+                    <div id="link"><a href="join.html">JOIN US</a></div>
+                    <div id="link"><a href="events.html">EVENTS</a></div>
+                    <div id="link"><a href="animallist.html">EXPLORE</a></div>
+                    <div id="link"><a href="contact.html">CONTACT US</a></div>
+                </div>
+             </form>
+        <body>
+            <!--Hours Table and CSS-->
+            <style>
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                }
+                .content {
+                    min-height: 100%;
+                }
+                .content-inside {
+                    padding: 20px;
+                    padding-bottom: 50px;
+                }
+                .footer {
+                    height: 50px;
+                    margin-top: -50px;
+                }
+
+                table{
+                    text-align:center;
+                    font-size:30px;
+                    border: 10px inset lightgreen;
+     
+                }
+                th{
+                    width: 100px;
+                    height: 50px;
+                    background-color: khaki;
+                    text-decoration: underline;
+     
+     
+                }
+                td{
+                    margin:40px 100px;
+                    padding: 10px;
+                    background-color: khaki;
+     
+                }
+                div {
+                    padding: 10px;
+                                       
+                }
+
+               .body-elements {
+                float: left;
+               }
+               
+     
+            </style>
+        <div class="content">
+            <section class="body-elements content-inside">
+                <table>
+                    <tr>
+                    <th colspan="2">Hours: </th>
+                    </tr>
+                    <tr>
+                        <th>Sunday: </th>
+                        <td>9am - 2pm</td>
+                    </tr>
+                     <tr>
+                     <th>Monday: </th>
+                        <td>5pm - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday: </th>
+                        <td>Closed</td>
+                    </tr>    
+                    <tr>
+                        <th>Wednesday: </th>
+                        <td>5pm - 10pm</td>
+                    </tr>    
+                    <tr>
+                        <th>Thursday: </th>
+                        <td>Closed</td>
+                    </tr>    
+                    <tr>
+                        <th>Friday: </th>
+                        <td>3pm - 10pm</td>
+                    </tr>    
+                    <tr>
+                        <th>Saturday: </th>
+                        <td>9am - 8pm</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <style>
+                    img{
+                        border:10px inset lightgreen;
+                    }
+                    h3{
+                        width:100px;
+
+                    }
+
+                    .smaug {
+                        width: auto;
+                        margin: 1%;
+                    }
+
+                    .smaug-button {
+                        margin-left: 35%;
+                    }
+                </style>
+                <script type="text/javascript">
+                    let cookies = 0;
+                    function feeder (cookies){
+                        if (cookies < 500){
+                            cookies +=1;
+                            alert("You have fed Smaug "+ cookies + " cookies!")
+                        }
+                      
+                        else {
+                                alert("Smaug has too many cookies and is now full")
+                        }
+                    }
+    
+
+                </script>
+                <div class="body-elements smaug">
+                    <h3 class="content-inside smaug">Feed Smaug a cookie!(Online and in person)</h3>
+                    <div>
+
+                        
+                        <img class="smaug" src = smaug.png>
+                        <div>
+                            <button class="smaug smaug-button" type= "button" onclick="feeder()">Feed a cookie!</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </body>
+        
+        <footer> <p> You have fed Smaug <a id ="cookies">0</a> cookies!</p></footer>
+        
+        
+     
+     
+     
+     
+     
+    </html>
+    </DOCTYPE>
